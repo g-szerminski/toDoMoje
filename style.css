@@ -16,6 +16,12 @@ body {
     /*direction: rtl;*/
 }
 
+#app {
+    margin: 0 auto;
+    width: 50%;
+    text-align: left;
+}
+
 button {
     width: 120px;
     height: 20px;
@@ -24,7 +30,27 @@ button {
 
 input {
     height: 20px;
+    width: 150px;
 }
- #changeTodoPositionInput, #deleteTodoPositionInput, #toggleComplitedPositionInput {
+
+.size {
+    width: 111px
+}
+
+.inputNumber {
+    width: 35px;
+}
+
+ #deleteTodoPositionInput, #toggleComplitedPositionInput {
     width: 50px;
+}
+
+.deleteButton {
+    width: 50px;
+}
+
+ul {
+    list-style-type: none;
+    /*direction: rtl;*/
+
 }

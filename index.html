@@ -6,7 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<div id='app'></div>
+		<div id='app'>
 		<h1>Todo List</h1>
 		<div>
  			<button onclick="handlers.toggleAll()">Toggle All</button>
@@ -17,17 +17,17 @@
 		</div>
 		<div>
 			<button onclick="handlers.changeTodo()">Change Todo</button>
-			<input id="changeTodoPositionInput" type="number">
-			<input id="changeTodoTextInput" type="text">
+			<input id="changeTodoPositionInput" class="inputNumber" type="number">
+			<input id="changeTodoTextInput" class="size" type="text">
 		</div>
 		<div>
 			<button onclick="handlers.toggleCompleted()">Toggle Completed</button>
-			<input id="toggleCompletedPositionInput" type="number">
+			<input id="toggleCompletedPositionInput" class="inputNumber" type="number">
 		</div>
 		
 		<ul>		
 		</ul>
-		
+		</div>
 		<script type="text/javascript" src="/scripts/app.js"></script>
 		<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
 		<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
