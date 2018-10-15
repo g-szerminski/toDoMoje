@@ -12,14 +12,15 @@ body {
     width: 100%;
     padding: 20px;
     text-shadow: 3px 3px 8px black;
-    text-align: center;
     /*direction: rtl;*/
 }
 
 #app {
-    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    margin: 0 auto; 
     width: 50%;
-    text-align: left;
+
 }
 
 button {
@@ -43,6 +44,10 @@ input {
 
  #deleteTodoPositionInput, #toggleComplitedPositionInput {
     width: 50px;
+}
+
+#toggleCompletedButton {
+    margin-left: -105px;
 }
 
 .deleteButton {
