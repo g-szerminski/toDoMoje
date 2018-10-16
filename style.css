@@ -29,7 +29,12 @@ button {
     background: rgba(0, 0, 0, 0.4);
     color: #F27505;
     border: none;
-} 
+}
+
+button:hover {
+    box-shadow: 0 2px 16px 0 rgba(242,117,5,0.24), 0 17px 50px 0 rgba(242,117,5,0.19);
+    font-weight: bold;
+}
 
 input {
     height: 25px;
