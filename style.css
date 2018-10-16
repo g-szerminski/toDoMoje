@@ -29,6 +29,7 @@ button {
     background: rgba(0, 0, 0, 0.4);
     color: #F27505;
     border: none;
+    transition-duration: 0.4s;
 }
 
 button:hover {
