@@ -12,7 +12,7 @@ body {
     width: 100%;
     padding: 20px;
     text-shadow: 3px 3px 8px black;
-    /*direction: rtl;*/
+   /* direction: rtl;*/
 }
 
 #app {
@@ -26,11 +26,9 @@ button {
     width: 120px;
     height: 25px;
     margin: 5px;
-    background-color: #000;
+    background: rgba(0, 0, 0, 0.4);
     color: #F27505;
     border: none;
-    opacity: 0.5;
-    border-radius: 5%;
 } 
 
 input {
@@ -38,8 +36,7 @@ input {
     width: 150px;
     border: none;
     border-radius: 5%;
-    background-color: #000;
-    opacity: 0.5;
+    background: rgba(0, 0, 0, 0.4);
     color: #F27505;
 }
 
