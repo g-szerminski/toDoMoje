@@ -108,3 +108,10 @@ const view = {
 	}
 };
 view.setUpEventListeners();
+
+var pressed = document.querySelector('input');
+pressed.addEventListener('keydown', function() {
+	if (CharCode() == 13) {
+	alert('wciśnięty enter');
+	}
+}, false)
