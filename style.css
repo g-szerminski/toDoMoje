@@ -37,6 +37,11 @@ button:hover {
     font-weight: bold;
 }
 
+button:active {
+  box-shadow: 0 2px 16px 0 rgba(242,117,5,0.24), 0 17px 50px 0 rgba(242,117,5,0.19);
+  transform: translateY(2px);
+}
+
 input {
     height: 25px;
     width: 150px;
