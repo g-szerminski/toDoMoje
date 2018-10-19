@@ -13,16 +13,16 @@
 			</div>
 			<div>
 				<button onclick="handlers.addTodo()">Add</button>
-				<input id="addTodoTextInput" type="text" placeholder="add task">
+				<input id="addTodoTextInput" type="text" placeholder=" add task">
 			</div>
 			<div>
 				<button onclick="handlers.changeTodo()">Change Todo</button>
-				<input id="changeTodoPositionInput" class="inputNumber" type="number">
+				<input id="changeTodoPositionInput" class="inputNumber" type="number" min=0>
 				<input id="changeTodoTextInput" class="inputSize" type="text">
 			</div>
 			<div>
 				<button id="toggleCompletedButton" onclick="handlers.toggleCompleted()">Toggle Completed</button>
-				<input id="toggleCompletedPositionInput" class="inputNumber" type="number">
+				<input id="toggleCompletedPositionInput" class="inputNumber" type="number" min=0>
 			</div>
 			
 			<ul>		

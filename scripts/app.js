@@ -110,25 +110,29 @@ const view = {
 view.setUpEventListeners();
 
 document.getElementById('addTodoTextInput').addEventListener('keypress', function(e) {
-    if (e.keyCode === 13) { 
+    if (e.key === 'Enter') { 
       handlers.addTodo();
   	}
 }, false);
-
 document.getElementById('changeTodoTextInput').addEventListener('keypress', function(e) {
     if (e.keyCode === 13) { 
       handlers.changeTodo();
     }
 }, false);
-
 document.getElementById('changeTodoPositionInput').addEventListener('keypress', function(e) {
     if (e.keyCode === 13) { 
       handlers.changeTodo();
     }
 }, false);
-
 document.getElementById('toggleCompletedPositionInput').addEventListener('keypress', function(e) {
     if (e.keyCode === 13) { 
       handlers.toggleCompleted();
+    }
+}, false);
+
+document.addEventListener('keypress', function(e) {
+    if (e.keyCode === 17 + e.keyrCode === 65) { 
+      handlers.toggleAll();
+      e.preventDefault();
     }
 }, false);
