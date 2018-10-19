@@ -109,9 +109,26 @@ const view = {
 };
 view.setUpEventListeners();
 
-var pressed = document.querySelector('input');
-pressed.addEventListener('keydown', function() {
-	if (CharCode() == 13) {
-	alert('wciśnięty enter');
-	}
-}, false)
+document.getElementById('addTodoTextInput').addEventListener('keypress', function(e) {
+    if (e.keyCode === 13) { 
+      handlers.addTodo();
+    }
+}, false);
+
+document.getElementById('changeTodoTextInput').addEventListener('keypress', function(e) {
+    if (e.keyCode === 13) { 
+      handlers.changeTodo();
+    }
+}, false);
+
+document.getElementById('changeTodoPositionInput').addEventListener('keypress', function(e) {
+    if (e.keyCode === 13) { 
+      handlers.changeTodo();
+    }
+}, false);
+
+document.getElementById('toggleCompletedPositionInput').addEventListener('keypress', function(e) {
+    if (e.keyCode === 13) { 
+      handlers.toggleCompleted();
+    }
+}, false);
