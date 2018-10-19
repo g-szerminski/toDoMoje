@@ -112,7 +112,7 @@ view.setUpEventListeners();
 document.getElementById('addTodoTextInput').addEventListener('keypress', function(e) {
     if (e.keyCode === 13) { 
       handlers.addTodo();
-    }
+  	}
 }, false);
 
 document.getElementById('changeTodoTextInput').addEventListener('keypress', function(e) {
