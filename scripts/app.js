@@ -130,9 +130,9 @@ document.getElementById('toggleCompletedPositionInput').addEventListener('keypre
     }
 }, false);
 
-document.addEventListener('keypress', function(e) {
-    if (e.keyCode === 17 + e.keyrCode === 65) { 
+document.addEventListener('keydown', function(e) {
+    if (e.keyCode === 17 && e.keyCode === 65) {
+    	e.preventDefault();
       handlers.toggleAll();
-      e.preventDefault();
     }
 }, false);
